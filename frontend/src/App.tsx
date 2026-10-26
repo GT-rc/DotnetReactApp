@@ -22,6 +22,7 @@ function App() {
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
       <h1>.NET 9 + React TypeScript App</h1>
+      <p>AHHHHHHHHHHHHHHH!!</p>
       <table border={1} cellPadding={10} style={{ borderCollapse: 'collapse' }}>
         <thead>
           <tr>

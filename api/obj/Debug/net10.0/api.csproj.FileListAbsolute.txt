@@ -31,3 +31,4 @@ C:\Users\ricec\source\filbert\DotnetReactApp\api\obj\Debug\net10.0\refint\api.dl
 C:\Users\ricec\source\filbert\DotnetReactApp\api\obj\Debug\net10.0\api.pdb
 C:\Users\ricec\source\filbert\DotnetReactApp\api\obj\Debug\net10.0\api.genruntimeconfig.cache
 C:\Users\ricec\source\filbert\DotnetReactApp\api\obj\Debug\net10.0\ref\api.dll
+C:\Users\ricec\source\filbert\DotnetReactApp\api\obj\Debug\net10.0\api.sourcelink.json
