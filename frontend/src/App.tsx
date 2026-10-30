@@ -8,8 +8,13 @@ interface WeatherForecast {
   summary: string;
 }
 
+interface WeatherForecast1 {
+  result: boolean;
+}
+
 function App() {
   const [forecasts, setForecasts] = useState<WeatherForecast[]>([]);
+  const [result, setResult] = useState<WeatherForecast1>();
 
   useEffect(() => {
     // Replace with your exact .NET backend local URL
@@ -19,10 +24,19 @@ function App() {
       .catch((err) => console.error("Error fetching data:", err));
   }, []);
 
+  // useEffect(() => {
+  //   // Replace with your exact .NET backend local URL
+  //   fetch('http://localhost:5068/weatherforecastcontroller1') 
+  //     .then((res) => res.json())
+  //     .then((data) => setResult(data))
+  //     .catch((err) => console.error("Error fetching data:", err));
+  // }, []);
+
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
       <h1>.NET 9 + React TypeScript App</h1>
       <p>AHHHHHHHHHHHHHHH!!</p>
+      {/* <p>{result ? "True" : "False"}</p> */}
       <table border={1} cellPadding={10} style={{ borderCollapse: 'collapse' }}>
         <thead>
           <tr>

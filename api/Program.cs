@@ -1,3 +1,5 @@
+using api.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Add CORS services
@@ -14,6 +16,9 @@ builder.Services.AddCors(options =>
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Register services here
+builder.Services.AddTransient<IWeatherForecastService1, WeatherForecastService1>();
 
 var app = builder.Build();
 
